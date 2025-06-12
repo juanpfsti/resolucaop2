@@ -1,7 +1,7 @@
  <h1>Lista de Tarefas</h1>
  <ul>
     {% for todo in todo_list %}
-        <li>{{ todo.title }} - <a href="#">Editar</a> | <a href="#">Deletar</a></li>
+        <li>{{ todo.title }} - <a href="#">Editar</a>
     {% endfor %}
  </ul>
- <a href="#">Criar Nova Tarefa</a>
+ <a href="{% url 'todo_form' %}">Criar Nova Tarefa</a>
